@@ -1,9 +1,20 @@
-import os
-from flask import Flask
+from flask import Flask, request, jsonify
+import aiml
+
 app = Flask(__name__)
+
+kernel = aiml.Kernel()
+kernel.learn("files/*.aiml")
+
 @app.route("/")
 def home():
-    return "Hippo Chatbot toimii!"
+    return "Yleisurheiluchatbot toimii"
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    message = request.json["message"]
+    response = kernel.respond(message)
+    return jsonify({"response": response})
+
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run()
