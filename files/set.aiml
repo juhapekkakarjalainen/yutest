@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>Mitkä lajit ovat * vuotiaille</pattern>
+	    <template>Kiitos kysymyksestä, <set name ="ika"><star/></set> vuotiaille on kaikki lajit</template>
+    </category>
+</aiml>

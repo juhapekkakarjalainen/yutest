@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- Ikä tallennetaan -->
+    <category>
+        <pattern>OLEN * VUOTIAS</pattern>
+        <template>
+            <think>
+                <set name="ika"><star/></set>
+            </think>
+            Kiitos. Tallensin ikäsi <get name="ika"/> vuotta.
+        </template>
+    </category>
+
+    <!-- Lajien kysely -->
+    <category>
+        <pattern>MITÄ LAJEJA VOIN KILPAILLA</pattern>
+        <template>
+
+            <condition name="ika">
+
+                <li value="5">
+                    Voit kilpailla lajeissa: 40 m, pituus ja pallonheitto.
+                </li>
+
+                <li value="6">
+                    Voit kilpailla lajeissa: 40 m, pituus ja pallonheitto.
+                </li>
+
+                <li value="7">
+                    Voit kilpailla lajeissa: 40 m, pituus ja pallonheitto.
+                </li>
+
+                <li value="8">
+                    Voit kilpailla lajeissa: 40 m, pituus ja pallonheitto.
+                </li>
+
+                <li value="9">
+                    Voit kilpailla lajeissa: 40 m, 1000 m, pituus ja kuula.
+                </li>
+
+                <li value="10">
+                    Voit kilpailla lajeissa: 40 m, 1000 m, pituus ja kuula.
+                </li>
+
+                <li value="11">
+                    Voit kilpailla lajeissa: 60 m, 1000 m, pituus ja kuula.
+                </li>
+
+                <li value="12">
+                    Voit kilpailla lajeissa: 60 m, 1000 m, pituus ja kuula.
+                </li>
+
+                <li value="13">
+                    Voit kilpailla lajeissa: 60 m, 200 m, korkeus ja pituus.
+                </li>
+
+                <li value="14">
+                    Voit kilpailla lajeissa: 60 m, 200 m, korkeus ja pituus.
+                </li>
+
+                <li value="15">
+                    Voit kilpailla lajeissa: 100 m, 400 m, seiväs ja kuula.
+                </li>
+
+                <li value="16">
+                    Voit kilpailla lajeissa: 100 m, 400 m, seiväs ja kuula.
+                </li>
+
+                <li value="17">
+                    Voit kilpailla lajeissa: 100 m, 400 m, seiväs ja kuula.
+                </li>
+
+                <li value="18">
+                    Voit kilpailla lajeissa: 100 m, 400 m, seiväs ja kuula.
+                </li>
+
+                <li value="19">
+                    Voit kilpailla lajeissa: 100 m, 400 m, seiväs ja kuula.
+                </li>
+
+                <li>
+                    Kerro ensin ikäsi esimerkiksi: Olen 11 vuotias.
+                </li>
+
+            </condition>
+
+        </template>
+    </category>
+
+</aiml>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>PALJONKO OSALLISTUMINEN MAKSAA</pattern>
+        <template>
+            Valkeakoskelaisille kilpailu on ilmainen.
+            Muille osallistumismaksu on 10 euroa per laji.
+            Jälki-ilmoittautuminen maksaa 20 euroa per laji.
+            Valkeakosken Hakan edustajille sekä valkeakoskelaisille lapsille kilpailu on ilmainen.
+            Myös 5- ja 7-vuotiaat lapset osallistuvat maksutta.
+        </template>
+    </category>
+    <category>
+        <pattern>MITÄ OSALLISTUMINEN MAKSAA</pattern>
+        <template>
+            <srai>PALJONKO OSALLISTUMINEN MAKSAA</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ONKO KILPAILU MAKSULLINEN</pattern>
+        <template>
+            <srai>PALJONKO OSALLISTUMINEN MAKSAA</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PALJONKO ILMOITTAUTUMINEN MAKSAA</pattern>
+        <template>
+            <srai>PALJONKO OSALLISTUMINEN MAKSAA</srai>
+        </template>
+    </category>
+</aiml>

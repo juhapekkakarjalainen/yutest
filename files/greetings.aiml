@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+    <category>
+        <pattern>Moi ^</pattern>
+        <template>Moi, kuinka voin auttaa sinua</template>
+    </category>
+    <category>
+        <pattern>Terve</pattern>
+        <template><srai>Huomenta</srai></template>
+    </category>
+
+</aiml>

@@ -1,0 +1,35 @@
+
+
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+    <category>
+        <pattern>Missä kilpailut pidetään</pattern>
+        <template>Kilpailut ovat Apian urheilukentällä</template>
+    </category>
+    <category>
+        <pattern>MISSÄ KISAT PIDETÄÄN</pattern>
+        <template>
+            <srai>Missä kilpailut pidetään</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MISSÄ HIPPOKISAT PIDETÄÄN</pattern>
+        <template>
+            <srai>Missä kilpailut pidetään</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>Milloin kilpailut alkavat</pattern>
+        <template>Kilpailut alkavat 13.9.2026 klo 12.
+        <link>
+            <text>Tarkemman aikataulun löydöt sivulta</text>
+            <url>https://www.valkeakoskenhaka.fi/yleisurheilu/kilpailut/kilpailut-2026/13-9-2026-hippo-nuorisokisat/</url>
+        </link>
+        </template>
+    </category>
+    <category>
+        <pattern>AIKATAULU *</pattern>
+        <template><srai>Koska kilpailut alkavat</srai></template>
+    </category>
+
+</aiml>

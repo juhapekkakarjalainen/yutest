@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>
+    En valitettavasti tunnistanut kysymystäsi.
+    Kokeile kysyä esimerkiksi:
+    Missä kilpailut pidetään?
+    Milloin kilpailut alkavat?
+    Paljonko osallistuminen maksaa?
+    </template>
+  </category>
+    <category>
+    <pattern>Huomenta</pattern>
+    <template>Erittäin hyvää huomenta</template>
+  </category>
+</aiml>
